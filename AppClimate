@@ -12,3 +12,17 @@ cannot_go_outside =  not is_sunny or temperature <= 10 or wind_speed >= 30
 print("Can go hiking:", can_go_hiking)
 print("Can go swimming:", can_go_swimming)
 print("Cannot go outside:", cannot_go_outside)
+
+wind = int(input()) # Don't change this line
+status = "unset"
+# Type your code below
+if wind < 8:
+    status = "Calm"
+elif wind >= 8 and wind <= 31:
+    status = "Breeze"
+elif wind >= 32 and wind <= 63:
+    status = "Gale"
+else:
+    status = "Storm"
+# Don't change the line below
+print(f"status = {status}")
